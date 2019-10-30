@@ -1,0 +1,6 @@
+#!/usr/bin/env sh 
+curl -XPOST localhost:9200/movies/movie/109487/_update -d '
+  {
+    "doc": {"title": "Interstellar"}
+  }
+'

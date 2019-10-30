@@ -16,4 +16,4 @@ const run = async function() {
   }
 }
 
-run()
+const a = setInterval(run, 300)

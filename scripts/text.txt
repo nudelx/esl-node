@@ -22,3 +22,11 @@ use retry_on_conflicts = n to try and update
 
 analyzer will broke string to different analyzers that will allow you to use NON exact match
 on your filed  
+
+
+Relationships 
+
+we can define a parent index by adding a new mapping 
+_parent: { type: <index_name>}
+
+so then we can use query "has_child" or "has_parent" and retrieve the data structure 

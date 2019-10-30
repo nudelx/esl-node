@@ -8,7 +8,7 @@ class ElsConnectionPool extends elasticsearch.ConnectionPool {
 
 const els = {
   els: new elasticsearch.Client({
-    ConnectionPool: ElsConnectionPool,
+    // ConnectionPool: ElsConnectionPool,
     host: 'localhost:9200',
     log: 'trace',
     apiVersion: '5.6'

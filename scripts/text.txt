@@ -1,0 +1,24 @@
+
+Load index
+curl -XPUT localhost:9200/shakespeare --data-binary @shakes-mapping.json
+
+
+curl -XPUT localhost:9200/shakespeare/_bulk --data-binary @shakespeare.json
+
+curl -XGET 'localhost:9200/shakespeare/_search?pretty' -d'
+> { "query" : {"match_phrase":{ "text_entry": "to be or not to be"}}} ‘
+
+
+# Terms
+
+Type is a table 
+
+concurrency control 
+
+
+use _version in order to update 
+use retry_on_conflicts = n to try and update 
+
+
+analyzer will broke string to different analyzers that will allow you to use NON exact match
+on your filed  

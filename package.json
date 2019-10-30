@@ -1,0 +1,9 @@
+{
+  "name": "els",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "elasticsearch": "^16.4.0"
+  }
+}

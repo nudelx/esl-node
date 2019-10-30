@@ -1,0 +1,10 @@
+#!/usr/bin/env sh 
+curl -XPUT localhost:9200/movies -d '
+{
+  "mappings": {
+    "movie": {
+      "_all": { "enabled": false },
+      "properties": { "year": { "type": "date" } }
+    }
+  }
+}'

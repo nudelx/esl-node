@@ -16,4 +16,12 @@ const run = async function() {
   }
 }
 
-const a = setInterval(run, 300)
+const a = setInterval(function() {
+  run()
+  run()
+  run()
+  run()
+  run()
+  run()
+  run()
+}, 20)
